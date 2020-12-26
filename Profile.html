@@ -32,10 +32,10 @@
                             <a class="nav-link " href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="Login.html">Login</a>
+                            <a class="nav-link " href="Login.html">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Profile.html">Profile</a>
+                            <a class="nav-link active" href="Profile.html">Profile</a>
                         </li>
                     </ul>
                 </div>
@@ -45,48 +45,33 @@
 
     <div class="heading">
     <!-- Default form register -->
+    <p class="h1 mb-4 loginheading">Profile</p>
+    <img class="profileimage" src="kanoon.png" alt="Lawyer Image">
 <form class="text-center border border-light p-5" action="#!">
-
-    <p class="h4 mb-4 loginheading">Sign up</p>
     <div class="registerinputdiv">
     <div class="form-row mb-4">
         <div class="col">
             <!-- First name -->
-            <input type="text" id="defaultRegisterFormFirstName" class="form-control logininput" placeholder="First name">
+            <input style="background-color: white" type="number"  class="form-control logininput" placeholder="User ID" readonly>
         </div>
         <div class="col">
             <!-- Last name -->
-            <input type="text" id="defaultRegisterFormLastName" class="form-control logininput" placeholder="Last name">
+            <input type="text" style="background-color: white" class="form-control logininput" placeholder="Name" readonly>
+        </div>
+        <div class="col">
+            <!-- USer name -->
+            <input type="text"  style="background-color: white" class="form-control logininput" placeholder="Username" readonly>
         </div>
     </div>
   
-    <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4 logininput" placeholder="E-mail">
+    <!-- Email -->
+    <input type="email" style="background-color: white" class="form-control mb-4 logininput" placeholder="E-mail" readonly>
 
-    <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" class="form-control logininput" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+    <!-- Joined on  -->
+    <input type="text" style="background-color: white"  class="form-control logininput" placeholder="Joined on" aria-describedby="defaultRegisterFormPasswordHelpBlock" readonly>
     
-
-    <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control logininput" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-
-    </div>
-    <!-- Newsletter -->
-    <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
-        <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
     </div>
 
-    <!-- Sign up button -->
-    <button class="btn my-4 btn-block loginbutton" type="submit">Sign in</button>
-
-    <!-- Social register -->
-    <p>or sign up with:</p>
-
-    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
-    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
 
 
 </form>
