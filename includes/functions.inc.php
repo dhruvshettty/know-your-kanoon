@@ -113,7 +113,10 @@ function loginUser($conn, $username, $pwd) {
     elseif ($check_pwd === true) {
         session_start();
         $_SESSION["id"] = $username_exists["id"];
+        $_SESSION["name"] = $username_exists["name"];
         $_SESSION["username"] = $username_exists["username"];
+        $_SESSION["email"] = $username_exists["email"];
+        $_SESSION["joined_on"] = $username_exists["created_at"];
         header("location: ../services.php");
         exit();
     }
