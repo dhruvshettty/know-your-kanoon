@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+include_once '../resources/templates/header.php';
 ?>
     
     <div class="heading">
@@ -78,5 +78,5 @@ include_once 'header.php';
     </div>
 
 <?php
-include_once 'footer.php';
+include_once '../resources/templates/footer.php';
 ?>

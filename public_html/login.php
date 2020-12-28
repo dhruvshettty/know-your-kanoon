@@ -1,9 +1,9 @@
 <?php 
-include_once 'header.php';
+include_once '../resources/templates/header.php';
 ?>
 
     <div class="container">
-        <form class="text-center border border-light p-5" action="includes/login.inc.php" method="post">
+        <form class="text-center border border-light p-5" action="../resources/includes/login.inc.php" method="post">
             <p class="h4 mb-4 loginheading">Sign In</p>
             <div class="registerinputdiv">
                 <input type="text" id="defaultRegisterFormFirstName" class="form-control logininput" name="username" placeholder="Username / Email">
@@ -25,5 +25,5 @@ include_once 'header.php';
     </div>
 
 <?php
-include_once 'footer.php';
+include_once '../resources/templates/footer.php';
 ?>

@@ -1,5 +1,5 @@
 <?php 
-include_once 'header.php';
+include_once '../resources/templates/header.php';
 ?>
 
         <section class="container-fluid px-0">
@@ -61,5 +61,5 @@ include_once 'header.php';
         -->
 
 <?php
-include_once 'footer.php';
+include_once '../resources/templates/footer.php';
 ?>

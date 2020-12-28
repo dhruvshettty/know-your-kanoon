@@ -48,7 +48,7 @@ function userExists($conn, $username, $email) {
     $sql = "SELECT * FROM users WHERE username = ? OR email = ?;";
     $stmt = mysqli_stmt_init($conn); // prevent SQL Injection
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../register.php?error=stmtfailed");
+        header("location: ../../public_html/register.php?error=stmtfailed");
         exit();
     }
 
@@ -72,7 +72,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
     $sql = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?);";  // placeholder used while binding parameter
     $stmt = mysqli_stmt_init($conn);         // prevent SQL Injection
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("location: ../register.php?error=stmtfailed");
+        header("location: ../../public_html/register.php?error=stmtfailed");
         exit();
     }
 
@@ -81,7 +81,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
     mysqli_stmt_bind_param($stmt, "ssss", $name, $username, $email, $hashed_pwd);   // ss -> datatype being sent
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ../register.php?error=none");
+    header("location: ../../public_html/register.php?error=none");
     exit();
 }
 
@@ -100,7 +100,7 @@ function loginUser($conn, $username, $pwd) {
     $username_exists = userExists($conn, $username, $username);
 
     if ($username_exists === false) {
-        header("location: ../login.php?error=wronglogin");
+        header("location: ../../public_html/login.php?error=wronglogin");
         exit();
     }
 
@@ -108,7 +108,7 @@ function loginUser($conn, $username, $pwd) {
     $check_pwd = password_verify($pwd, $pwd_hashed);
 
     if ($check_pwd === false) {
-        header("location: ../login.php?error=incorrectlogin");
+        header("location: ../../public_html/login.php?error=incorrectlogin");
     }
     elseif ($check_pwd === true) {
         session_start();
@@ -117,7 +117,7 @@ function loginUser($conn, $username, $pwd) {
         $_SESSION["username"] = $username_exists["username"];
         $_SESSION["email"] = $username_exists["email"];
         $_SESSION["joined_on"] = $username_exists["created_at"];
-        header("location: ../services.php");
+        header("location: ../../public_html/services.php");
         exit();
     }
 }

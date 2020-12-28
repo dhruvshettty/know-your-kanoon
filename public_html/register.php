@@ -1,5 +1,5 @@
 <?php 
-    include_once 'header.php';
+include_once '../resources/templates/header.php';
 ?>
     <div class="container">
         <form class="text-center border border-light p-5" action="includes/register.inc.php" method="post">
@@ -42,5 +42,5 @@
     </div>
 
 <?php 
-include_once 'footer.php';
+include_once '../resources/templates/footer.php';
 ?>

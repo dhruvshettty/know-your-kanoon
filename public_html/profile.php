@@ -1,12 +1,12 @@
 <?php 
-include_once 'header.php';
+include_once '../resources/templates/header.php';
 session_start();
 ?>
 
     <div class="heading">
     <!-- Default form register -->
     <p class="h1 mb-4 loginheading">Profile</p>
-    <img class="profileimage" src="kanoon.png" alt="Lawyer Image">
+    <img class="profileimage" src="img/kanoon.png" alt="Lawyer Image">
 <form class="text-center border border-light p-5" action="#!">
     <div class="registerinputdiv">
     <label>User ID</label>
@@ -42,5 +42,5 @@ session_start();
     </div>
 
 <?php
-include_once 'footer.php';
+include_once '../resources/templates/footer.php';
 ?>
