@@ -92,5 +92,19 @@ i{
 
 .registerinputdiv{
     margin-left: 35%;
-    margin-top: 3%;
+    
+}
+
+.col {
+    margin-bottom: 10pt;
+}
+
+
+.profileimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
 }

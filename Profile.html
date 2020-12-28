@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="app.css">
+        <title>Know Your Kanoon</title>
+</head>
+<body>
+    <header>
+        <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Know Your Kanoon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="Login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Profile.html">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="heading">
+    <!-- Default form register -->
+    <p class="h1 mb-4 loginheading">Profile</p>
+    <img class="profileimage" src="kanoon.png" alt="Lawyer Image">
+<form class="text-center border border-light p-5" action="#!">
+    <div class="registerinputdiv">
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- First name -->
+            <input style="background-color: white" type="number"  class="form-control logininput" placeholder="User ID" readonly>
+        </div>
+        <div class="col">
+            <!-- Last name -->
+            <input type="text" style="background-color: white" class="form-control logininput" placeholder="Name" readonly>
+        </div>
+        <div class="col">
+            <!-- USer name -->
+            <input type="text"  style="background-color: white" class="form-control logininput" placeholder="Username" readonly>
+        </div>
+    </div>
+  
+    <!-- Email -->
+    <input type="email" style="background-color: white" class="form-control mb-4 logininput" placeholder="E-mail" readonly>
+
+    <!-- Joined on  -->
+    <input type="text" style="background-color: white"  class="form-control logininput" placeholder="Joined on" aria-describedby="defaultRegisterFormPasswordHelpBlock" readonly>
+    
+    </div>
+
+
+
+</form>
+<!-- Default form register -->
+    </div>
+</body>
+</html>
