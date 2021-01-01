@@ -54,8 +54,8 @@ if (isset($_POST["reset"])) {
     $mail->Host = "smtp.gmail.com";
     $mail->Port = '587';
     $mail->isHTML();
-    $mail->Username = 'dhruvshetty213@gmail.com';
-    $mail->Password = "Gurukul20!%";
+    $mail->Username = 'example@example.com';
+    $mail->Password = "password";
     $mail->SetFrom('no-reply@knowyourkanoon.com');
     $mail->Subject = $subject;
     $mail->Body = $message;
