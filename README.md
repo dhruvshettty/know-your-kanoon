@@ -21,13 +21,26 @@ CREATE TABLE users (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     username VARCHAR(50) NOT NULL UNIQUE,
-    email VARCHAR(5) NOT NULL,
+    email VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
+#### Password Recovery Table (alpha release)
+![Users table](https://github.com/dhruvshettty/know-your-kanoon/blob/master//public_html/img/password_recovery_table.jpg?raw=true)
+
+#### SQL Code
+```
+CREATE TABLE pwd_recovery ( 
+    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+    email TEXT NOT NULL, 
+    selector TEXT NOT NULL, 
+    token LONGTEXT NOT NULL, 
+    expires TEXT NOT NULL
+);
+```
 
 ## Acknowledgments
-1) Title of this project was inspired from Amber Rana's podcast called <em>Know Your Kanoon</em>: https://ivmpodcasts.com/know-your-kanoon.
-2) Motivation for this project was part of our Web Applications laboratory (2020-2021) under Prof. Arya S S, PESIT-Bengaluru South Campus
-3) The project structure and code covention is in accordance to the PSR-1 (PHP Standards Recommendation): https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md
+1) Motivation for this project was part of our Web Applications laboratory (2020-2021) under Prof. Arya S S, PESIT-Bengaluru South Campus.
+2) Title of this project was inspired from Amber Rana's podcast called <em>Know Your Kanoon</em>: https://ivmpodcasts.com/know-your-kanoon.
+3) The project structure and code covention is in accordance to the PSR-1 (PHP Standards Recommendation): https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md.
